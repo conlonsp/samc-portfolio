@@ -8,6 +8,9 @@ function NavBar() {
       <NavLink to='/' exact='true'>
         Home
       </NavLink>
+      <NavLink to='/about'>
+        About
+      </NavLink>
     </div>
   )
 }
