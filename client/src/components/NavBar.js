@@ -11,7 +11,7 @@ function NavBar() {
       <NavLink to='/about'>
         About
       </NavLink>
-      <NavLink to='/portfolio'>
+      <NavLink to='/projects'>
         Portfolio
       </NavLink>
     </div>

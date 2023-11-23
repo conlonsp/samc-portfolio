@@ -4,7 +4,8 @@ import { Routes, Route } from 'react-router-dom'
 import Header from './Header';
 import Home from '../pages/Home';
 import About from '../pages/About';
-import Portfolio from '../pages/Portfolio';
+import Projects from '../pages/Projects';
+import Project from '../pages/Project';
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
         <Route path='/about' element={
           <About />
         }/>
-        <Route path='/portfolio'>
+        <Route path='/projects'>
           <Route index element={
-            <Portfolio />
+            <Projects />
           }/>
           <Route path=':id' element={
             <Project />

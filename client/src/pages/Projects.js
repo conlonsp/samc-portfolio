@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom'
 
-
-function Portfolio() {
+function Projects() {
   const [projects, setProjects] = useState([])
 
   useEffect(() => {
@@ -21,7 +21,7 @@ function Portfolio() {
       {projects.map(p => {
         return (
           <div key={p.id}>
-            <h3>{p.name}</h3>
+            <Link to={`/projects/${p.id}`}>{p.name}</Link>
           </div>
         )
       })}
@@ -29,4 +29,4 @@ function Portfolio() {
   )
 }
 
-export default Portfolio;
+export default Projects;
