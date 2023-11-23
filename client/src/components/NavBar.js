@@ -1,9 +1,14 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
 
   return (
-    <h1>NavBar</h1>
+    <div>
+      <NavLink to='/' exact='true'>
+        Home
+      </NavLink>
+    </div>
   )
 }
 
