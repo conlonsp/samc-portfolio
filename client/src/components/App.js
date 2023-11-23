@@ -17,9 +17,14 @@ function App() {
         <Route path='/about' element={
           <About />
         }/>
-        <Route path='/portfolio' element={
-          <Portfolio />
-        }/>
+        <Route path='/portfolio'>
+          <Route index element={
+            <Portfolio />
+          }/>
+          <Route path=':id' element={
+            <Project />
+          }/>
+        </Route>
       </Routes>
     </div>
   );
