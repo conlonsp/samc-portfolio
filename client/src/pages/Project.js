@@ -25,6 +25,8 @@ function Project() {
         <div>
           <h1>{proj.name}</h1>
           <Link to={proj.gh_url}>{proj.gh_url}</Link>
+          <h3>{proj.tech}</h3>
+          <h3>{proj.func}</h3>
         </div>
       }
     </div>
