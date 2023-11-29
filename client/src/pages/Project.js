@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import Clip from "../components/Clip";
 
 function Project() {
   const [proj, setProj] = useState(null)
@@ -24,6 +25,7 @@ function Project() {
         :
         <div>
           <h1>{proj.name}</h1>
+          <Clip vidId={proj.yt_id} />
           <Link to={proj.gh_url}>{proj.gh_url}</Link>
           <h3>{proj.tech}</h3>
           <h3>{proj.func}</h3>
