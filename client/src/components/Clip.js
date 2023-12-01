@@ -15,8 +15,13 @@ function Clip({ vidId }) {
   return (
     <YouTube videoId={vidId} options={options} id="video"/>
   )
+  
 }
 
 export default Clip;
 
-// onReady={this._onReady}
+// function ready(event) {
+  //   event.target.pauseVideo();
+  // }
+
+// onReady={this.ready}
