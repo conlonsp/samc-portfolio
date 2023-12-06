@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import Clip from "../components/Clip";
+import Button from '@mui/material/Button'
 
 function Project() {
   const [proj, setProj] = useState(null)
@@ -21,7 +22,7 @@ function Project() {
   return (
     <div>
       {!proj ?
-        <h1 onClick={() => window.location.reload(false)} style={{cursor: 'pointer'}}>Back</h1>
+        <Button onClick={() => window.location.reload(false)} style={{cursor: 'pointer'}}>Back</Button>
         :
         <div>
           <h1>{proj.name}</h1>
